@@ -1,0 +1,2 @@
+[2022-09-14T18:51:46,284][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-09-14T18:51:46,322][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.

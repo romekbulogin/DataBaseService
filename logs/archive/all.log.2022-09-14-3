@@ -1,0 +1,2 @@
+[2022-09-14T18:51:47,604][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-09-14T18:51:47,697][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.6.10.Final

@@ -1,0 +1,2 @@
+[2022-09-14T18:45:26,605][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarted] Started DataBaseServiceApplicationKt in 4.172 seconds (JVM running for 5.901)
+[2022-09-14T18:51:25,305][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 1644 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)

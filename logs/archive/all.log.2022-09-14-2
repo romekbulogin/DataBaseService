@@ -1,0 +1,2 @@
+[2022-09-14T18:51:47,000][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+[2022-09-14T18:51:47,185][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 1761 ms

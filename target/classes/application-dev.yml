@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: "jdbc:postgresql://localhost:5432/students"
+    username: postgres
+    password: 1337
+
+
+logging:
+  config: 'classpath:log4j2.yml'
