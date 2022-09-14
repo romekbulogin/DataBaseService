@@ -5,4 +5,4 @@ import org.springframework.stereotype.Repository
 import ru.edu.databaseservice.entities.BotEntity
 
 @Repository
-interface BotRepository : JpaRepository<Int, BotEntity> {}
+interface BotRepository : JpaRepository<BotEntity, Int> {}

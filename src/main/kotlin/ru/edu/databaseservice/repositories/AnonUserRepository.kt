@@ -5,4 +5,4 @@ import org.springframework.stereotype.Repository
 import ru.edu.databaseservice.entities.AnonUserEntity
 
 @Repository
-interface AnonUserRepository : JpaRepository<Int, AnonUserEntity> {}
+interface AnonUserRepository : JpaRepository<AnonUserEntity, Int> {}

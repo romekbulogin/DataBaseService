@@ -5,4 +5,7 @@ import org.springframework.stereotype.Repository
 import ru.edu.databaseservice.entities.RegUserEntity
 
 @Repository
-interface RegUserRepository : JpaRepository<Int, RegUserEntity> {}
+interface RegUserRepository : JpaRepository<RegUserEntity, Int> {
+    fun findByUsernameContainsIgnoreCase(userName: String): RegUserEntity?
+    fun findByEmailContainsIgnoreCase(email: String): RegUserEntity?
+}
