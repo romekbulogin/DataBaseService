@@ -1,0 +1,2 @@
+[2022-09-15T22:16:00,332][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarted] Started DataBaseServiceApplicationKt in 5.671 seconds (JVM running for 7.472)
+[2022-09-15T22:16:05,147][INFO ][http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring DispatcherServlet 'dispatcherServlet'

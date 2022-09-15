@@ -1,0 +1,2 @@
+[2022-09-15T22:15:58,435][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2022-09-15T22:15:59,040][INFO ][main][org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]

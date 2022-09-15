@@ -1,0 +1,2 @@
+[2022-09-15T22:12:26,320][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarted] Started DataBaseServiceApplicationKt in 5.428 seconds (JVM running for 7.271)
+[2022-09-15T22:12:29,508][INFO ][http-nio-8080-exec-2][ru.edu.databaseservice.controllers.RegUserController.createRegUser] Create new user: RegUserEntity(id=null, username=LOH1337, login=1488, email=lexa1337@gmail.com, countWin=null, countLose=null, dateOfRegist=null, birthdate=Fri Sep 28 04:00:00 MSD 2001, refRatingEntities=null, refRoomsEntities=null)
