@@ -1,2 +1,2 @@
-[2022-09-14T18:51:47,604][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
-[2022-09-14T18:51:47,697][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.6.10.Final
+[2022-09-14T18:51:47,916][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-09-14T18:51:48,068][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect

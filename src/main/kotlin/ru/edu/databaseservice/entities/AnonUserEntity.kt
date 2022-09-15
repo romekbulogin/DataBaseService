@@ -14,5 +14,5 @@ data class AnonUserEntity (
 
     @OneToMany(mappedBy = "refAnonUserEntity")
     var refRoomsEntities: List<RoomsEntity>? = null
-
 )
+

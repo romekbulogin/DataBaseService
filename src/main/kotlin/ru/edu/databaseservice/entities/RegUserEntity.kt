@@ -1,12 +1,14 @@
 package ru.edu.databaseservice.entities
 
-import java.sql.Date
+import java.util.*
 import javax.persistence.*
+import java.time.LocalDateTime
 
 @Entity
-@Table(name = "Reg_User", schema = "public", catalog = "monopoly")
+@Table(name = "reg_user", schema = "public", catalog = "monopoly")
 data class RegUserEntity(
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, insertable = false, updatable = false)
     var id: Int? = null,
 
@@ -19,14 +21,14 @@ data class RegUserEntity(
     @Column(name = "email", nullable = false)
     var email: String? = null,
 
-    @Column(name = "count_win", nullable = false)
-    var countWin: Int? = null,
+    @Column(name = "count_win", nullable = true)
+    var countWin: Long? = null,
 
-    @Column(name = "count_lose", nullable = false)
-    var countLose: Int? = null,
+    @Column(name = "count_lose", nullable = true)
+    var countLose: Long? = null,
 
-    @Column(name = "date_of_regist", nullable = false)
-    var dateOfRegist: Date? = null,
+    @Column(name = "date_of_regist", nullable = true)
+    var dateOfRegist: LocalDateTime = LocalDateTime.now(),
 
     @Column(name = "birthdate", nullable = false)
     var birthdate: Date? = null,
@@ -36,6 +38,5 @@ data class RegUserEntity(
 
     @OneToMany(mappedBy = "refRegUserEntity")
     var refRoomsEntities: List<RoomsEntity>? = null
-
 )
 

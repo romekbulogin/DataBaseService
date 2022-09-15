@@ -13,13 +13,11 @@ data class RatingEntity (
     @Column(name = "id_user", nullable = true, insertable = false, updatable = false)
     var idUser: Int? = null,
 
-    @Column(name = "date_add", nullable = false)
+    @Column(name = "date_add", nullable = true)
     var dateAdd: Date? = null,
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_user", referencedColumnName = "id")
     var refRegUserEntity: RegUserEntity? = null
-
-
 )
 
