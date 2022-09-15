@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/monopoly</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="d2ek83n6u3kfbi@ec2-63-32-248-14.eu-west-1.compute.amazonaws.com" uuid="73b2d43f-693f-4108-ae00-742ff05819ca">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-63-32-248-14.eu-west-1.compute.amazonaws.com:5432/d2ek83n6u3kfbi</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

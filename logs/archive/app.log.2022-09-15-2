@@ -1,2 +1,1 @@
-[2022-09-15T22:12:21,394][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
-[2022-09-15T22:12:21,419][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-09-15T22:26:29,808][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 12144 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
