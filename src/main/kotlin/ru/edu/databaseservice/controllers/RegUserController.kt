@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.ResponseBody
 import ru.edu.databaseservice.entities.RegUserEntity
 import ru.edu.databaseservice.repositories.RegUserRepository
@@ -42,5 +43,14 @@ class RegUserController(
 
     @GetMapping("/get")
     @ResponseBody
-    fun sample() = regUserRepository.findById(1)
+    fun findGetUser(@RequestParam("id") id: Int): RegUserEntity? {
+        return try {
+            val entity = regUserRepository.findById(id).get()
+            logger.info("Response by database: $entity")
+            return entity
+        } catch (ex: Exception) {
+            logger.error { ex.message }
+            null
+        }
+    }
 }

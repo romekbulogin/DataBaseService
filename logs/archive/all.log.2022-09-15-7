@@ -1,2 +1,1 @@
-[2022-09-15T23:05:45,486][INFO ][SpringApplicationShutdownHook][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy] Closing JPA EntityManagerFactory for persistence unit 'default'
-[2022-09-15T23:05:45,498][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+[2022-09-15T23:05:46,408][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.

@@ -4,7 +4,7 @@ import java.sql.Date
 import javax.persistence.*
 
 @Entity
-@Table(name = "Bot", schema = "public", catalog = "monopoly")
+@Table(name = "bot", schema = "public", catalog = "monopoly")
 data class BotEntity(
     @Id
     @Column(name = "id", nullable = false, insertable = false, updatable = false)

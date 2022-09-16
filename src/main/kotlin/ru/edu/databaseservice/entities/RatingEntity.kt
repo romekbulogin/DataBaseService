@@ -4,7 +4,7 @@ import java.sql.Date
 import javax.persistence.*
 
 @Entity
-@Table(name = "Rating", schema = "public", catalog = "monopoly")
+@Table(name = "rating", schema = "public", catalog = "monopoly")
 data class RatingEntity (
     @Id
     @Column(name = "id", nullable = false)

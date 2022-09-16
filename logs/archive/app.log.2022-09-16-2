@@ -1,0 +1,2 @@
+[2022-09-16T15:28:07,131][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarted] Started DataBaseServiceApplicationKt in 5.036 seconds (JVM running for 6.57)
+[2022-09-16T15:29:27,601][INFO ][http-nio-8080-exec-5][ru.edu.databaseservice.controllers.RegUserController.findGetUser] Request for get Registration User by id=4

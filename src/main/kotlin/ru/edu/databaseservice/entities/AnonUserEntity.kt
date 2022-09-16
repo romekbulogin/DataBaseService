@@ -3,7 +3,7 @@ package ru.edu.databaseservice.entities
 import javax.persistence.*
 
 @Entity
-@Table(name = "Anon_User", schema = "public", catalog = "monopoly")
+@Table(name = "anon_user", schema = "public", catalog = "monopoly")
 data class AnonUserEntity (
     @Id
     @Column(name = "id", nullable = false, insertable = false, updatable = false)

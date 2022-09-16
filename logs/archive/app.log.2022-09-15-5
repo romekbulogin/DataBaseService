@@ -1,1 +1,1 @@
-[2022-09-15T22:26:45,827][ERROR][http-nio-8080-exec-2][ru.edu.databaseservice.controllers.RegUserController.createRegUser] User not createcould not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+[2022-09-15T23:04:28,650][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 2100 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)

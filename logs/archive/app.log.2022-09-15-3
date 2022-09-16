@@ -1,2 +1,2 @@
-[2022-09-15T22:26:29,839][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
-[2022-09-15T22:26:29,873][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-09-15T22:26:37,283][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarted] Started DataBaseServiceApplicationKt in 8.012 seconds (JVM running for 9.89)
+[2022-09-15T22:26:45,459][INFO ][http-nio-8080-exec-2][ru.edu.databaseservice.controllers.RegUserController.createRegUser] Create new user: RegUserEntity(id=null, username=LOH1337, login=1488, email=lexa1337@gmail.com, countWin=null, countLose=null, dateOfRegist=2022-09-15T22:26:45.442062600, birthdate=Fri Sep 28 04:00:00 MSD 2001, refRatingEntities=null, refRoomsEntities=null)

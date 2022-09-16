@@ -1,1 +1,2 @@
-[2022-09-15T23:05:03,099][INFO ][http-nio-8080-exec-1][ru.edu.databaseservice.controllers.RegUserController.createRegUser] Create new user: RegUserEntity(id=null, username=LOH131237, login=148128, email=lexa121337@gmail.com, countWin=null, countLose=null, dateOfRegist=2022-09-15T23:05:03.083843900, birthdate=Fri Sep 28 04:00:00 MSD 2001, refRatingEntities=null, refRoomsEntities=null)
+[2022-09-15T23:05:45,486][INFO ][SpringApplicationShutdownHook][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-09-15T23:05:45,498][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
