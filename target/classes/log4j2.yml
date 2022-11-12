@@ -20,7 +20,7 @@ Configuration:
         Policies:
           TimeBasedTriggeringPolicy: { }
           SizeBasedTriggeringPolicy:
-            size: 250
+            size: 250MB
 
       - name: APP_LOG
         fileName: ${log-path}/app.log
@@ -30,7 +30,7 @@ Configuration:
         Policies:
           TimeBasedTriggeringPolicy: { }
           SizeBasedTriggeringPolicy:
-            size: 250
+            size: 250MB
 
 
     Console:

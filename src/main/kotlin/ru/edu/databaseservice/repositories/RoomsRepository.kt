@@ -5,4 +5,6 @@ import org.springframework.stereotype.Repository
 import ru.edu.databaseservice.entities.RoomsEntity
 
 @Repository
-interface RoomsRepository : JpaRepository<RoomsEntity, Int> {}
+interface RoomsRepository : JpaRepository<RoomsEntity, Int> {
+    fun findRoomsEntityByToken(token: String): RoomsEntity
+}

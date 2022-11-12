@@ -1,2 +1,0 @@
-[2022-09-16T15:31:29,157][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarted] Started DataBaseServiceApplicationKt in 5.58 seconds (JVM running for 7.056)
-[2022-09-16T15:32:23,340][INFO ][http-nio-8080-exec-2][ru.edu.databaseservice.controllers.RegUserController.findGetUser] Response by database: RegUserEntity(id=5, username=LOH1337, login=1488, email=lexa1337@gmail.com, countWin=null, countLose=null, dateOfRegist=2022-09-15T00:00, birthdate=2001-09-28 00:00:00.0, refRatingEntities=[], refRoomsEntities=[])

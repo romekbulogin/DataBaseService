@@ -1,2 +1,0 @@
-[2022-09-15T23:05:02,945][INFO ][http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet.initServletBean] Initializing Servlet 'dispatcherServlet'
-[2022-09-15T23:05:02,957][INFO ][http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet.initServletBean] Completed initialization in 2 ms

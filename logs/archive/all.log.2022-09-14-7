@@ -1,1 +1,0 @@
-[2022-09-14T18:52:59,711][INFO ][SpringApplicationShutdownHook][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy] Closing JPA EntityManagerFactory for persistence unit 'default'

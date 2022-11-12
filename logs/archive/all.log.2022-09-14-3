@@ -1,2 +1,0 @@
-[2022-09-14T18:51:47,916][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[2022-09-14T18:51:48,068][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect

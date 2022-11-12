@@ -5,11 +5,12 @@ import org.springframework.stereotype.Service
 import ru.edu.databaseservice.entities.BotEntity
 import ru.edu.databaseservice.repositories.BotRepository
 
-private val logger = KotlinLogging.logger { }
-
 @Service
 class BotService(private val botRepository: BotRepository) {
 
+    private val logger = KotlinLogging.logger { }
+
+    fun findById(id: Int) = botRepository.findById(id)?.get()
     fun saveBot(bot: BotEntity) {
         try {
             logger.info("Bot ${bot.token} created")

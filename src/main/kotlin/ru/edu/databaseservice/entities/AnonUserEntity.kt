@@ -4,8 +4,9 @@ import javax.persistence.*
 
 @Entity
 @Table(name = "anon_user", schema = "public", catalog = "monopoly")
-data class AnonUserEntity (
+data class AnonUserEntity(
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, insertable = false, updatable = false)
     var id: Int? = null,
 

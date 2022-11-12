@@ -9,25 +9,25 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.ResponseBody
 import ru.edu.databaseservice.entities.RegUserEntity
-import ru.edu.databaseservice.repositories.RegUserRepository
-import ru.edu.databaseservice.response.CreateUser
+import ru.edu.databaseservice.response.CreateUserResponse
+import ru.edu.databaseservice.services.RegUserService
 
 
 @Controller
 @RequestMapping("/api/reg_user")
 class RegUserController(
-    private val regUserRepository: RegUserRepository
+    private val regUserService: RegUserService
 ) {
 
     private val logger = KotlinLogging.logger { }
 
     @PostMapping("/create")
     @ResponseBody
-    fun createRegUser(@RequestBody regUserEntity: RegUserEntity): CreateUser {
+    fun createRegUser(@RequestBody regUserEntity: RegUserEntity): CreateUserResponse {
         return try {
             logger.info("Create new user: $regUserEntity")
-            regUserRepository.save(regUserEntity)
-            CreateUser().apply {
+            regUserService.save(regUserEntity)
+            CreateUserResponse().apply {
                 success = true
                 userId = regUserEntity.id
                 userName = regUserEntity.username
@@ -35,7 +35,7 @@ class RegUserController(
             }
         } catch (ex: Exception) {
             logger.error("User not create${ex.message}")
-            CreateUser().apply {
+            CreateUserResponse().apply {
                 success = false
             }
         }
@@ -43,11 +43,24 @@ class RegUserController(
 
     @GetMapping("/get")
     @ResponseBody
-    fun findGetUser(@RequestParam("id") id: Int): RegUserEntity? {
+    fun findUserById(@RequestParam("id") id: Int): RegUserEntity? {
         return try {
-            val entity = regUserRepository.findById(id).get()
+            val entity = regUserService.findUserById(id)
             logger.info("Response by database: $entity")
-            return entity
+            entity
+        } catch (ex: Exception) {
+            logger.error { ex.message }
+            null
+        }
+    }
+
+    @GetMapping("/get_by_username")
+    @ResponseBody
+    fun findUserByUserName(@RequestParam("username") userName: String): RegUserEntity? {
+        return try {
+            val entity = regUserService.findUserByUserName(userName)
+            logger.info("Response by database: $entity")
+            entity
         } catch (ex: Exception) {
             logger.error { ex.message }
             null

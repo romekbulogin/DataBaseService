@@ -1,1 +1,0 @@
-[2022-09-16T15:32:39,449][INFO ][http-nio-8080-exec-3][ru.edu.databaseservice.controllers.RegUserController.findGetUser] Response by database: RegUserEntity(id=6, username=Кошачья жопа, login=lexa1488, email=cat1382@gmail.com, countWin=null, countLose=null, dateOfRegist=2022-09-16T00:00, birthdate=1956-05-13 00:00:00.0, refRatingEntities=[], refRoomsEntities=[])
