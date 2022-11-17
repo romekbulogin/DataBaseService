@@ -1,27 +1,30 @@
-package ru.edu.databaseservice.entities
+package ru.edu.databaseservice.entities;
 
-import java.sql.Date
-import javax.persistence.*
+import javax.persistence.*;
+import java.sql.Date;
+import java.util.Objects;
 
 @Entity
 @Table(name = "bot", schema = "public", catalog = "monopoly")
 data class BotEntity(
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @Column(name = "id", nullable = false, insertable = false, updatable = false)
+    @Column(name = "id")
     var id: Int? = null,
 
-    @Column(name = "token", nullable = false)
+    @Column(name = "token")
     var token: String? = null,
 
-    @Column(name = "date_begin_work", nullable = true)
+    @Column(name = "date_begin_work")
     var dateBeginWork: Date? = null,
 
-    @Column(name = "count_of_use", nullable = true)
+    @Column(name = "count_of_use")
     var countOfUse: Int? = null,
 
-    @Column(name = "is_free", nullable = true)
+    @Column(name = "is_free")
     var isFree: Boolean? = null,
 
-    @OneToMany(mappedBy = "refBotEntity")
-    var refRoomsEntities: List<RoomsEntity>? = null
+    @ManyToOne
+    @JoinColumn(name = "roomsEntity")
+    var roomsEntity: RoomsEntity? = null,
 )

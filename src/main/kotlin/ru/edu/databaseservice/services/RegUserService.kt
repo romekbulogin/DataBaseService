@@ -4,7 +4,6 @@ import mu.KotlinLogging
 import org.springframework.stereotype.Service
 import ru.edu.databaseservice.entities.RegUserEntity
 import ru.edu.databaseservice.repositories.RegUserRepository
-import kotlin.math.log
 
 @Service
 class RegUserService(private val regUserRepository: RegUserRepository) {

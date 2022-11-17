@@ -14,7 +14,7 @@ class RoomsService(private val roomsRepository: RoomsRepository) {
 
     fun save(room: RoomsEntity) {
         try {
-            logger.info("Save room $room")
+            logger.info("Save $room")
             roomsRepository.save(room)
         } catch (ex: Exception) {
             logger.info(ex.message)

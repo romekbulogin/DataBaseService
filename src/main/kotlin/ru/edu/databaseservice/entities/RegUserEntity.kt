@@ -1,42 +1,46 @@
-package ru.edu.databaseservice.entities
+package ru.edu.databaseservice.entities;
 
-import java.util.*
-import javax.persistence.*
-import java.time.LocalDateTime
+import javax.persistence.*;
+import java.sql.Date;
+import java.util.Objects;
 
 @Entity
 @Table(name = "reg_user", schema = "public", catalog = "monopoly")
 data class RegUserEntity(
-    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false, insertable = false, updatable = false)
+    @Id
+    @Column(name = "id")
     var id: Int? = null,
 
-    @Column(name = "username", nullable = false)
+    @Column(name = "username")
     var username: String? = null,
 
-    @Column(name = "login", nullable = false)
+    @Column(name = "login")
     var login: String? = null,
 
-    @Column(name = "email", nullable = false)
+    @Column(name = "password")
+    var password: String? = null,
+
+    @Column(name = "email")
     var email: String? = null,
 
-    @Column(name = "count_win", nullable = true)
+    @Column(name = "count_win")
     var countWin: Long? = null,
 
-    @Column(name = "count_lose", nullable = true)
+    @Column(name = "count_lose")
     var countLose: Long? = null,
 
-    @Column(name = "date_of_regist", nullable = true)
-    var dateOfRegist: LocalDateTime = LocalDateTime.now(),
+    @Column(name = "date_of_regist")
+    var dateOfRegist: Date? = null,
 
-    @Column(name = "birthdate", nullable = false)
+    @Column(name = "birthdate")
     var birthdate: Date? = null,
 
-    @OneToMany(mappedBy = "refRegUserEntity")
-    var refRatingEntities: List<RatingEntity>? = null,
+    @ManyToOne
+    @JoinColumn(name = "roomsEntity")
+    var roomsEntity: RoomsEntity? = null,
 
-    @OneToMany(mappedBy = "refRegUserEntity")
-    var refRoomsEntities: List<RoomsEntity>? = null
+    @ManyToOne
+    @JoinColumn(name = "ratingEntity")
+    var ratingEntity: RatingEntity? = null,
 )
-

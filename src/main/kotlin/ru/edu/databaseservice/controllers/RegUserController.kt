@@ -21,11 +21,11 @@ class RegUserController(
 
     private val logger = KotlinLogging.logger { }
 
-    @PostMapping("/create")
+    @PostMapping("/new")
     @ResponseBody
     fun createRegUser(@RequestBody regUserEntity: RegUserEntity): CreateUserResponse {
         return try {
-            logger.info("Create new user: $regUserEntity")
+            logger.info("Save: $regUserEntity")
             regUserService.save(regUserEntity)
             CreateUserResponse().apply {
                 success = true

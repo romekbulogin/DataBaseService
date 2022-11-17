@@ -1,60 +1,53 @@
-package ru.edu.databaseservice.entities
+package ru.edu.databaseservice.entities;
 
-import java.sql.Date
-import javax.persistence.*
+import javax.persistence.*;
+import java.sql.Date;
+import java.util.Objects;
 
 @Entity
 @Table(name = "rooms", schema = "public", catalog = "monopoly")
 data class RoomsEntity(
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @Column(name = "id", nullable = false)
+    @Column(name = "id")
     var id: Int? = null,
 
-    @Column(name = "count_of_player", nullable = true)
+    @Column(name = "count_of_player")
     var countOfPlayer: Int? = null,
 
-    @Column(name = "mode_game", nullable = true)
+    @Column(name = "mode_game")
     var modeGame: String? = null,
 
-    @Column(name = "type_game", nullable = true)
+    @Column(name = "type_game")
     var typeGame: String? = null,
 
-    @Column(name = "have_token", nullable = true)
+    @Column(name = "have_token")
     var haveToken: Boolean? = null,
 
-    @Column(name = "token", nullable = true)
+    @Column(name = "token")
     var token: String? = null,
 
-    @Column(name = "must_regist", nullable = true)
+    @Column(name = "must_regist")
     var mustRegist: Boolean? = null,
 
-    @Column(name = "have_bots", nullable = true)
+    @Column(name = "have_bots")
     var haveBots: Boolean? = null,
 
-    @Column(name = "bots_id", nullable = true, insertable = false, updatable = false)
-    var botsId: Int? = null,
+    @Column(name = "bots_id")
+    @OneToMany(targetEntity = BotEntity::class, mappedBy = "roomsEntity")
+    var botsId: MutableList<BotEntity>? = mutableListOf(),
 
-    @Column(name = "users_id", nullable = true, insertable = false, updatable = false)
-    var usersId: Int? = null,
+    @Column(name = "users_id")
+    @OneToMany(targetEntity = RegUserEntity::class, mappedBy = "roomsEntity")
+    var usersId: MutableList<RegUserEntity>? = mutableListOf(),
 
-    @Column(name = "anons_id", nullable = true, insertable = false, updatable = false)
-    var anonsId: Int? = null,
+    @Column(name = "anons_id")
+    @OneToMany(targetEntity = AnonUsersEntity::class, mappedBy = "roomsEntity")
+    var anonsId: MutableList<AnonUsersEntity>? = mutableListOf(),
 
-    @Column(name = "is_active", nullable = true)
+    @Column(name = "is_active")
     var isActive: Boolean? = null,
 
-    @Column(name = "date_of_activate", nullable = true)
-    var dateOfActivate: Date? = null,
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "bots_id", referencedColumnName = "id")
-    var refBotEntity: BotEntity? = null,
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "users_id", referencedColumnName = "id")
-    var refRegUserEntity: RegUserEntity? = null,
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "anons_id", referencedColumnName = "id")
-    var refAnonUserEntity: AnonUserEntity? = null
+    @Column(name = "date_activate")
+    var dateActivate: Date? = null
 )

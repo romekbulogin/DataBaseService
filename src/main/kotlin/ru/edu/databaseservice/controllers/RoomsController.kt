@@ -12,7 +12,6 @@ import ru.edu.databaseservice.services.RoomsService
 @Controller
 @RequestMapping("/api/rooms")
 class RoomsController(private val roomsService: RoomsService) {
-
     @PostMapping("/new")
     @ResponseBody
     fun save(@RequestParam roomsEntity: RoomsEntity) = roomsService.save(roomsEntity)

@@ -1,68 +1,1009 @@
-[2022-09-16T16:47:47,455][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
-[2022-09-16T16:48:10,043][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 9956 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
-[2022-09-16T16:48:10,053][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
-[2022-09-16T16:48:10,061][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
-[2022-09-16T16:48:11,074][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[2022-09-16T16:48:11,170][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 81 ms. Found 5 JPA repository interfaces.
-[2022-09-16T16:48:11,927][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
-[2022-09-16T16:48:11,951][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
-[2022-09-16T16:48:11,952][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
-[2022-09-16T16:48:11,953][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
-[2022-09-16T16:48:12,094][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
-[2022-09-16T16:48:12,095][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 1961 ms
-[2022-09-16T16:48:12,263][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
-[2022-09-16T16:48:12,498][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
-[2022-09-16T16:48:12,586][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
-[2022-09-16T16:48:12,733][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
-[2022-09-16T16:48:12,901][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-[2022-09-16T16:48:13,119][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[2022-09-16T16:48:13,916][INFO ][main][org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[2022-09-16T16:48:13,928][INFO ][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2022-09-16T16:48:14,948][WARN ][main][org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2022-09-16T16:48:15,383][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting ProtocolHandler ["http-nio-8080"]
-[2022-09-16T16:48:15,408][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start] Tomcat started on port(s): 8080 (http) with context path ''
-[2022-09-16T16:48:15,422][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarted] Started DataBaseServiceApplicationKt in 5.871 seconds (JVM running for 7.283)
-[2022-09-16T16:48:20,681][INFO ][http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring DispatcherServlet 'dispatcherServlet'
-[2022-09-16T16:48:20,682][INFO ][http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet.initServletBean] Initializing Servlet 'dispatcherServlet'
-[2022-09-16T16:48:20,683][INFO ][http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet.initServletBean] Completed initialization in 1 ms
-[2022-09-16T16:48:20,825][INFO ][http-nio-8080-exec-2][ru.edu.databaseservice.services.AnonUserService.saveAnonUser] Request: AnonUserEntity(id=null, iden32=65578138913908, refRoomsEntities=null)
-[2022-09-16T16:48:20,885][INFO ][http-nio-8080-exec-2][ru.edu.databaseservice.services.AnonUserService.saveAnonUser] Anon successfully created AnonUserEntity(id=2, iden32=65578138913908, refRoomsEntities=null)
-[2022-09-16T16:48:47,878][INFO ][http-nio-8080-exec-4][ru.edu.databaseservice.controllers.RegUserController.createRegUser] Create new user: RegUserEntity(id=null, username=Коjhkjшачья жопа, login=lexa1488, email=cat1382@gmail.com, countWin=null, countLose=null, dateOfRegist=2022-09-16T16:48:47.866620100, birthdate=Sun May 13 03:00:00 MSK 1956, refRatingEntities=null, refRoomsEntities=null)
-[2022-09-16T16:49:02,596][INFO ][http-nio-8080-exec-3][ru.edu.databaseservice.services.AnonUserService.deleteAnonUserById] Request for delete anon user by id=2
-[2022-09-16T16:49:02,655][INFO ][http-nio-8080-exec-3][ru.edu.databaseservice.services.AnonUserService.deleteAnonUserById] Anon successfully deleted with id=2
-[2022-09-16T16:49:53,072][INFO ][http-nio-8080-exec-5][ru.edu.databaseservice.controllers.RegUserController.findUserById] Response by database: RegUserEntity(id=6, username=Кошачья жопа, login=lexa1488, email=cat1382@gmail.com, countWin=null, countLose=null, dateOfRegist=2022-09-16T00:00, birthdate=1956-05-13 00:00:00.0, refRatingEntities=[], refRoomsEntities=[])
-[2022-09-16T16:49:56,856][INFO ][http-nio-8080-exec-6][ru.edu.databaseservice.controllers.RegUserController.findUserById] Response by database: RegUserEntity(id=7, username=Коjhkjшачья жопа, login=lexa1488, email=cat1382@gmail.com, countWin=null, countLose=null, dateOfRegist=2022-09-16T00:00, birthdate=1956-05-13 00:00:00.0, refRatingEntities=[], refRoomsEntities=[])
-[2022-09-16T16:50:00,488][ERROR][http-nio-8080-exec-7][ru.edu.databaseservice.controllers.RegUserController.findUserById] No value present
-[2022-09-16T16:50:07,203][INFO ][SpringApplicationShutdownHook][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy] Closing JPA EntityManagerFactory for persistence unit 'default'
-[2022-09-16T16:50:07,206][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
-[2022-09-16T16:50:07,212][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
-[2022-09-16T17:06:32,314][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 796 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
-[2022-09-16T17:06:32,328][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
-[2022-09-16T17:06:32,332][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "prod"
-[2022-09-16T17:06:33,364][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[2022-09-16T17:06:33,477][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 101 ms. Found 5 JPA repository interfaces.
-[2022-09-16T17:06:34,202][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
-[2022-09-16T17:06:34,225][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
-[2022-09-16T17:06:34,226][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
-[2022-09-16T17:06:34,227][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
-[2022-09-16T17:06:34,386][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
-[2022-09-16T17:06:34,386][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 1963 ms
-[2022-09-16T17:06:34,523][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
-[2022-09-16T17:06:36,310][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
-[2022-09-16T17:06:36,372][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
-[2022-09-16T17:06:36,519][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
-[2022-09-16T17:06:36,682][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-[2022-09-16T17:06:36,817][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[2022-09-16T17:06:38,392][INFO ][main][org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[2022-09-16T17:06:38,401][INFO ][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2022-09-16T17:06:39,194][WARN ][main][org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2022-09-16T17:06:39,652][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting ProtocolHandler ["http-nio-8080"]
-[2022-09-16T17:06:39,684][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start] Tomcat started on port(s): 8080 (http) with context path ''
-[2022-09-16T17:06:39,703][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarted] Started DataBaseServiceApplicationKt in 7.906 seconds (JVM running for 9.557)
-[2022-09-16T17:07:04,342][INFO ][http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring DispatcherServlet 'dispatcherServlet'
-[2022-09-16T17:07:04,343][INFO ][http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet.initServletBean] Initializing Servlet 'dispatcherServlet'
-[2022-09-16T17:07:04,345][INFO ][http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet.initServletBean] Completed initialization in 2 ms
-[2022-09-16T17:07:04,565][INFO ][http-nio-8080-exec-2][ru.edu.databaseservice.controllers.RegUserController.createRegUser] Create new user: RegUserEntity(id=null, username=L3H4, login=lexa1488, email=cat1382@gmail.com, countWin=null, countLose=null, dateOfRegist=2022-09-16T17:07:04.545546600, birthdate=Sun May 13 03:00:00 MSK 1956, refRatingEntities=null, refRoomsEntities=null)
-[2022-09-16T17:08:24,404][INFO ][SpringApplicationShutdownHook][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy] Closing JPA EntityManagerFactory for persistence unit 'default'
-[2022-09-16T17:08:24,408][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
-[2022-09-16T17:08:26,980][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
+[2022-11-17T16:56:59,565][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 3572 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
+[2022-11-17T16:56:59,591][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
+[2022-11-17T16:56:59,594][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-11-17T16:57:00,873][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-11-17T16:57:01,037][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 145 ms. Found 8 JPA repository interfaces.
+[2022-11-17T16:57:02,048][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+[2022-11-17T16:57:02,085][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+[2022-11-17T16:57:02,087][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
+[2022-11-17T16:57:02,088][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-11-17T16:57:02,354][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+[2022-11-17T16:57:02,355][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 2665 ms
+[2022-11-17T16:57:02,610][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
+[2022-11-17T16:57:03,043][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
+[2022-11-17T16:57:03,142][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-11-17T16:57:03,350][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
+[2022-11-17T16:57:03,722][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2022-11-17T16:57:04,016][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2022-11-17T16:57:04,474][ERROR][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Failed to initialize JPA EntityManagerFactory: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.CardEntity.game_data_one_player in ru.edu.databaseservice.entities.GameDataOnePlayerEntity.cards
+[2022-11-17T16:57:04,475][WARN ][main][org.springframework.context.support.AbstractApplicationContext.refresh] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.CardEntity.game_data_one_player in ru.edu.databaseservice.entities.GameDataOnePlayerEntity.cards
+[2022-11-17T16:57:04,476][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+[2022-11-17T16:57:04,482][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
+[2022-11-17T16:57:04,487][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Stopping service [Tomcat]
+[2022-11-17T16:57:04,508][INFO ][main][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2022-11-17T16:57:04,534][ERROR][main][org.springframework.boot.SpringApplication.reportFailure] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.CardEntity.game_data_one_player in ru.edu.databaseservice.entities.GameDataOnePlayerEntity.cards
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.3.jar:2.7.3]
+	at ru.edu.databaseservice.DataBaseServiceApplicationKt.main(DataBaseServiceApplication.kt:13) ~[classes/:?]
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.CardEntity.game_data_one_player in ru.edu.databaseservice.entities.GameDataOnePlayerEntity.cards
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:844) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:795) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:53) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1693) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1661) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:286) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1202) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1233) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 16 more
+[2022-11-17T16:58:09,418][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 4860 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
+[2022-11-17T16:58:09,431][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
+[2022-11-17T16:58:09,433][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-11-17T16:58:10,596][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-11-17T16:58:10,725][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 113 ms. Found 8 JPA repository interfaces.
+[2022-11-17T16:58:11,746][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+[2022-11-17T16:58:11,782][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+[2022-11-17T16:58:11,784][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
+[2022-11-17T16:58:11,786][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-11-17T16:58:12,012][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+[2022-11-17T16:58:12,013][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 2498 ms
+[2022-11-17T16:58:12,260][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
+[2022-11-17T16:58:12,615][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
+[2022-11-17T16:58:12,682][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-11-17T16:58:12,866][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
+[2022-11-17T16:58:13,177][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2022-11-17T16:58:13,437][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2022-11-17T16:58:13,811][ERROR][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Failed to initialize JPA EntityManagerFactory: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.CardEntity.game_data_one_player in ru.edu.databaseservice.entities.GameDataOnePlayerEntity.cards
+[2022-11-17T16:58:13,812][WARN ][main][org.springframework.context.support.AbstractApplicationContext.refresh] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.CardEntity.game_data_one_player in ru.edu.databaseservice.entities.GameDataOnePlayerEntity.cards
+[2022-11-17T16:58:13,813][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+[2022-11-17T16:58:13,820][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
+[2022-11-17T16:58:13,823][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Stopping service [Tomcat]
+[2022-11-17T16:58:13,835][INFO ][main][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2022-11-17T16:58:13,864][ERROR][main][org.springframework.boot.SpringApplication.reportFailure] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.CardEntity.game_data_one_player in ru.edu.databaseservice.entities.GameDataOnePlayerEntity.cards
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.3.jar:2.7.3]
+	at ru.edu.databaseservice.DataBaseServiceApplicationKt.main(DataBaseServiceApplication.kt:13) ~[classes/:?]
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.CardEntity.game_data_one_player in ru.edu.databaseservice.entities.GameDataOnePlayerEntity.cards
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:844) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:795) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:53) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1693) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1661) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:286) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1202) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1233) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 16 more
+[2022-11-17T16:59:19,173][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 9580 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
+[2022-11-17T16:59:19,192][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
+[2022-11-17T16:59:19,195][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-11-17T16:59:20,924][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-11-17T16:59:21,079][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 132 ms. Found 8 JPA repository interfaces.
+[2022-11-17T16:59:22,428][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+[2022-11-17T16:59:22,467][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+[2022-11-17T16:59:22,470][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
+[2022-11-17T16:59:22,473][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-11-17T16:59:22,795][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+[2022-11-17T16:59:22,797][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 3445 ms
+[2022-11-17T16:59:23,083][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
+[2022-11-17T16:59:23,498][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
+[2022-11-17T16:59:23,625][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-11-17T16:59:23,885][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
+[2022-11-17T16:59:24,328][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2022-11-17T16:59:24,665][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2022-11-17T16:59:25,153][ERROR][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Failed to initialize JPA EntityManagerFactory: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.CardEntity.card in ru.edu.databaseservice.entities.GameDataOnePlayerEntity.cards
+[2022-11-17T16:59:25,155][WARN ][main][org.springframework.context.support.AbstractApplicationContext.refresh] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.CardEntity.card in ru.edu.databaseservice.entities.GameDataOnePlayerEntity.cards
+[2022-11-17T16:59:25,156][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+[2022-11-17T16:59:25,165][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
+[2022-11-17T16:59:25,169][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Stopping service [Tomcat]
+[2022-11-17T16:59:25,203][INFO ][main][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2022-11-17T16:59:25,242][ERROR][main][org.springframework.boot.SpringApplication.reportFailure] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.CardEntity.card in ru.edu.databaseservice.entities.GameDataOnePlayerEntity.cards
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.3.jar:2.7.3]
+	at ru.edu.databaseservice.DataBaseServiceApplicationKt.main(DataBaseServiceApplication.kt:13) ~[classes/:?]
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.CardEntity.card in ru.edu.databaseservice.entities.GameDataOnePlayerEntity.cards
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:844) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:795) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:53) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1693) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1661) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:286) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1202) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1233) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 16 more
+[2022-11-17T16:59:55,404][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 12928 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
+[2022-11-17T16:59:55,420][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
+[2022-11-17T16:59:55,422][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-11-17T16:59:56,764][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-11-17T16:59:56,908][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 125 ms. Found 8 JPA repository interfaces.
+[2022-11-17T16:59:57,823][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+[2022-11-17T16:59:57,861][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+[2022-11-17T16:59:57,862][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
+[2022-11-17T16:59:57,864][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-11-17T16:59:58,093][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+[2022-11-17T16:59:58,094][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 2540 ms
+[2022-11-17T16:59:58,345][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
+[2022-11-17T16:59:58,695][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
+[2022-11-17T16:59:58,808][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-11-17T16:59:59,002][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
+[2022-11-17T16:59:59,392][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2022-11-17T16:59:59,644][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2022-11-17T17:00:00,081][ERROR][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Failed to initialize JPA EntityManagerFactory: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.CardEntity.game_data_one_player in ru.edu.databaseservice.entities.GameDataOnePlayerEntity.cards
+[2022-11-17T17:00:00,082][WARN ][main][org.springframework.context.support.AbstractApplicationContext.refresh] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.CardEntity.game_data_one_player in ru.edu.databaseservice.entities.GameDataOnePlayerEntity.cards
+[2022-11-17T17:00:00,083][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+[2022-11-17T17:00:00,097][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
+[2022-11-17T17:00:00,102][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Stopping service [Tomcat]
+[2022-11-17T17:00:00,123][INFO ][main][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2022-11-17T17:00:00,149][ERROR][main][org.springframework.boot.SpringApplication.reportFailure] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.CardEntity.game_data_one_player in ru.edu.databaseservice.entities.GameDataOnePlayerEntity.cards
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.3.jar:2.7.3]
+	at ru.edu.databaseservice.DataBaseServiceApplicationKt.main(DataBaseServiceApplication.kt:13) ~[classes/:?]
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.CardEntity.game_data_one_player in ru.edu.databaseservice.entities.GameDataOnePlayerEntity.cards
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:844) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:795) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:53) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1693) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1661) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:286) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1202) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1233) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 16 more
+[2022-11-17T17:01:59,244][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 10784 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
+[2022-11-17T17:01:59,262][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
+[2022-11-17T17:01:59,264][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-11-17T17:02:00,450][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-11-17T17:02:00,594][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 128 ms. Found 8 JPA repository interfaces.
+[2022-11-17T17:02:01,578][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+[2022-11-17T17:02:01,618][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:02:01,620][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
+[2022-11-17T17:02:01,621][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-11-17T17:02:01,820][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+[2022-11-17T17:02:01,821][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 2469 ms
+[2022-11-17T17:02:02,086][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
+[2022-11-17T17:02:02,426][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
+[2022-11-17T17:02:02,498][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-11-17T17:02:02,653][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
+[2022-11-17T17:02:03,075][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2022-11-17T17:02:03,294][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2022-11-17T17:02:03,708][ERROR][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Failed to initialize JPA EntityManagerFactory: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.RegUserEntity.rating in ru.edu.databaseservice.entities.RatingEntity.idUser
+[2022-11-17T17:02:03,709][WARN ][main][org.springframework.context.support.AbstractApplicationContext.refresh] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.RegUserEntity.rating in ru.edu.databaseservice.entities.RatingEntity.idUser
+[2022-11-17T17:02:03,710][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+[2022-11-17T17:02:03,718][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
+[2022-11-17T17:02:03,723][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Stopping service [Tomcat]
+[2022-11-17T17:02:03,753][INFO ][main][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2022-11-17T17:02:03,784][ERROR][main][org.springframework.boot.SpringApplication.reportFailure] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.RegUserEntity.rating in ru.edu.databaseservice.entities.RatingEntity.idUser
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.3.jar:2.7.3]
+	at ru.edu.databaseservice.DataBaseServiceApplicationKt.main(DataBaseServiceApplication.kt:13) ~[classes/:?]
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.RegUserEntity.rating in ru.edu.databaseservice.entities.RatingEntity.idUser
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:844) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:795) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:53) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1693) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1661) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:286) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1202) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1233) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 16 more
+[2022-11-17T17:04:12,404][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 3564 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
+[2022-11-17T17:04:12,419][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
+[2022-11-17T17:04:12,421][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-11-17T17:04:13,666][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-11-17T17:04:13,832][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 144 ms. Found 8 JPA repository interfaces.
+[2022-11-17T17:04:14,765][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+[2022-11-17T17:04:14,802][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:04:14,803][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
+[2022-11-17T17:04:14,805][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-11-17T17:04:14,978][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+[2022-11-17T17:04:14,979][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 2442 ms
+[2022-11-17T17:04:15,159][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
+[2022-11-17T17:04:15,457][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
+[2022-11-17T17:04:15,521][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-11-17T17:04:15,675][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
+[2022-11-17T17:04:16,023][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2022-11-17T17:04:16,221][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2022-11-17T17:04:16,687][ERROR][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Failed to initialize JPA EntityManagerFactory: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.AnonUsersEntity.rooms in ru.edu.databaseservice.entities.RoomsEntity.anonsId
+[2022-11-17T17:04:16,689][WARN ][main][org.springframework.context.support.AbstractApplicationContext.refresh] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.AnonUsersEntity.rooms in ru.edu.databaseservice.entities.RoomsEntity.anonsId
+[2022-11-17T17:04:16,690][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+[2022-11-17T17:04:16,790][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
+[2022-11-17T17:04:16,795][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Stopping service [Tomcat]
+[2022-11-17T17:04:16,819][INFO ][main][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2022-11-17T17:04:16,852][ERROR][main][org.springframework.boot.SpringApplication.reportFailure] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.AnonUsersEntity.rooms in ru.edu.databaseservice.entities.RoomsEntity.anonsId
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.3.jar:2.7.3]
+	at ru.edu.databaseservice.DataBaseServiceApplicationKt.main(DataBaseServiceApplication.kt:13) ~[classes/:?]
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.AnonUsersEntity.rooms in ru.edu.databaseservice.entities.RoomsEntity.anonsId
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:844) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:795) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:53) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1693) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1661) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:286) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1202) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1233) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 16 more
+[2022-11-17T17:04:54,649][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 2832 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
+[2022-11-17T17:04:54,662][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
+[2022-11-17T17:04:54,664][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-11-17T17:04:55,772][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-11-17T17:04:55,912][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 121 ms. Found 8 JPA repository interfaces.
+[2022-11-17T17:04:56,801][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+[2022-11-17T17:04:56,837][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:04:56,839][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
+[2022-11-17T17:04:56,841][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-11-17T17:04:57,032][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+[2022-11-17T17:04:57,033][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 2287 ms
+[2022-11-17T17:04:57,215][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
+[2022-11-17T17:04:57,477][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
+[2022-11-17T17:04:57,532][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-11-17T17:04:57,636][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
+[2022-11-17T17:04:57,939][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2022-11-17T17:04:58,112][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2022-11-17T17:04:58,487][ERROR][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.AnonUsersEntity column: id (should be mapped with insert="false" update="false")
+[2022-11-17T17:04:58,488][WARN ][main][org.springframework.context.support.AbstractApplicationContext.refresh] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.AnonUsersEntity column: id (should be mapped with insert="false" update="false")
+[2022-11-17T17:04:58,489][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+[2022-11-17T17:04:58,503][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
+[2022-11-17T17:04:58,506][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Stopping service [Tomcat]
+[2022-11-17T17:04:58,522][INFO ][main][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2022-11-17T17:04:58,544][ERROR][main][org.springframework.boot.SpringApplication.reportFailure] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.AnonUsersEntity column: id (should be mapped with insert="false" update="false")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.3.jar:2.7.3]
+	at ru.edu.databaseservice.DataBaseServiceApplicationKt.main(DataBaseServiceApplication.kt:13) ~[classes/:?]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.AnonUsersEntity column: id (should be mapped with insert="false" update="false")
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 16 more
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.AnonUsersEntity column: id (should be mapped with insert="false" update="false")
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:862) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:880) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:902) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:634) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:351) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:464) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1237) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 16 more
+[2022-11-17T17:05:51,957][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 1840 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
+[2022-11-17T17:05:51,975][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
+[2022-11-17T17:05:51,977][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-11-17T17:05:53,582][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-11-17T17:05:53,729][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 130 ms. Found 8 JPA repository interfaces.
+[2022-11-17T17:05:54,675][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+[2022-11-17T17:05:54,709][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:05:54,710][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
+[2022-11-17T17:05:54,711][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-11-17T17:05:54,929][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+[2022-11-17T17:05:54,929][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 2855 ms
+[2022-11-17T17:05:55,194][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
+[2022-11-17T17:05:55,694][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
+[2022-11-17T17:05:55,801][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-11-17T17:05:56,070][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
+[2022-11-17T17:05:56,613][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2022-11-17T17:05:56,970][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2022-11-17T17:05:57,538][ERROR][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.AnonUsersEntity column: id (should be mapped with insert="false" update="false")
+[2022-11-17T17:05:57,539][WARN ][main][org.springframework.context.support.AbstractApplicationContext.refresh] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.AnonUsersEntity column: id (should be mapped with insert="false" update="false")
+[2022-11-17T17:05:57,540][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+[2022-11-17T17:05:57,547][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
+[2022-11-17T17:05:57,558][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Stopping service [Tomcat]
+[2022-11-17T17:05:57,579][INFO ][main][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2022-11-17T17:05:57,620][ERROR][main][org.springframework.boot.SpringApplication.reportFailure] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.AnonUsersEntity column: id (should be mapped with insert="false" update="false")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.3.jar:2.7.3]
+	at ru.edu.databaseservice.DataBaseServiceApplicationKt.main(DataBaseServiceApplication.kt:13) ~[classes/:?]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.AnonUsersEntity column: id (should be mapped with insert="false" update="false")
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 16 more
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.AnonUsersEntity column: id (should be mapped with insert="false" update="false")
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:862) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:880) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:902) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:634) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:351) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:464) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1237) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 16 more
+[2022-11-17T17:08:26,459][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 12684 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
+[2022-11-17T17:08:26,476][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
+[2022-11-17T17:08:26,478][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-11-17T17:08:27,993][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-11-17T17:08:28,114][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 108 ms. Found 8 JPA repository interfaces.
+[2022-11-17T17:08:29,084][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+[2022-11-17T17:08:29,124][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:08:29,126][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
+[2022-11-17T17:08:29,128][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-11-17T17:08:29,346][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+[2022-11-17T17:08:29,346][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 2739 ms
+[2022-11-17T17:08:29,615][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
+[2022-11-17T17:08:30,001][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
+[2022-11-17T17:08:30,119][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-11-17T17:08:30,317][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
+[2022-11-17T17:08:30,740][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2022-11-17T17:08:31,036][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2022-11-17T17:08:31,457][ERROR][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.RealEstateEntity column: id (should be mapped with insert="false" update="false")
+[2022-11-17T17:08:31,457][WARN ][main][org.springframework.context.support.AbstractApplicationContext.refresh] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.RealEstateEntity column: id (should be mapped with insert="false" update="false")
+[2022-11-17T17:08:31,458][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+[2022-11-17T17:08:31,465][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
+[2022-11-17T17:08:31,472][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Stopping service [Tomcat]
+[2022-11-17T17:08:31,491][INFO ][main][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2022-11-17T17:08:31,517][ERROR][main][org.springframework.boot.SpringApplication.reportFailure] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.RealEstateEntity column: id (should be mapped with insert="false" update="false")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.3.jar:2.7.3]
+	at ru.edu.databaseservice.DataBaseServiceApplicationKt.main(DataBaseServiceApplication.kt:13) ~[classes/:?]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.RealEstateEntity column: id (should be mapped with insert="false" update="false")
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 16 more
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.RealEstateEntity column: id (should be mapped with insert="false" update="false")
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:862) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:880) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:902) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:634) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:351) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:464) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1237) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 16 more
+[2022-11-17T17:08:59,305][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 2824 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
+[2022-11-17T17:08:59,319][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
+[2022-11-17T17:08:59,321][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-11-17T17:09:00,429][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-11-17T17:09:00,552][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 106 ms. Found 8 JPA repository interfaces.
+[2022-11-17T17:09:01,494][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+[2022-11-17T17:09:01,534][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:09:01,536][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
+[2022-11-17T17:09:01,538][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-11-17T17:09:01,718][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+[2022-11-17T17:09:01,718][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 2306 ms
+[2022-11-17T17:09:01,931][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
+[2022-11-17T17:09:02,350][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
+[2022-11-17T17:09:02,414][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-11-17T17:09:02,551][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
+[2022-11-17T17:09:02,863][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2022-11-17T17:09:03,119][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2022-11-17T17:09:03,729][ERROR][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.CardEntity column: id (should be mapped with insert="false" update="false")
+[2022-11-17T17:09:03,729][WARN ][main][org.springframework.context.support.AbstractApplicationContext.refresh] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.CardEntity column: id (should be mapped with insert="false" update="false")
+[2022-11-17T17:09:03,730][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+[2022-11-17T17:09:03,736][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
+[2022-11-17T17:09:03,741][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Stopping service [Tomcat]
+[2022-11-17T17:09:03,753][INFO ][main][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2022-11-17T17:09:03,782][ERROR][main][org.springframework.boot.SpringApplication.reportFailure] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.CardEntity column: id (should be mapped with insert="false" update="false")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.3.jar:2.7.3]
+	at ru.edu.databaseservice.DataBaseServiceApplicationKt.main(DataBaseServiceApplication.kt:13) ~[classes/:?]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.CardEntity column: id (should be mapped with insert="false" update="false")
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 16 more
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.CardEntity column: id (should be mapped with insert="false" update="false")
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:862) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:880) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:902) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:634) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:351) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:464) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1237) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 16 more
+[2022-11-17T17:09:22,764][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 5500 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
+[2022-11-17T17:09:22,778][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
+[2022-11-17T17:09:22,780][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-11-17T17:09:23,848][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-11-17T17:09:23,991][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 121 ms. Found 8 JPA repository interfaces.
+[2022-11-17T17:09:24,972][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+[2022-11-17T17:09:25,011][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:09:25,012][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
+[2022-11-17T17:09:25,014][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-11-17T17:09:25,282][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+[2022-11-17T17:09:25,283][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 2423 ms
+[2022-11-17T17:09:25,556][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
+[2022-11-17T17:09:25,860][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
+[2022-11-17T17:09:25,961][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-11-17T17:09:26,152][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
+[2022-11-17T17:09:26,493][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2022-11-17T17:09:26,776][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2022-11-17T17:09:27,242][ERROR][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.RegUserEntity column: id (should be mapped with insert="false" update="false")
+[2022-11-17T17:09:27,243][WARN ][main][org.springframework.context.support.AbstractApplicationContext.refresh] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.RegUserEntity column: id (should be mapped with insert="false" update="false")
+[2022-11-17T17:09:27,244][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+[2022-11-17T17:09:27,260][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
+[2022-11-17T17:09:27,265][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Stopping service [Tomcat]
+[2022-11-17T17:09:27,292][INFO ][main][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2022-11-17T17:09:27,317][ERROR][main][org.springframework.boot.SpringApplication.reportFailure] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.RegUserEntity column: id (should be mapped with insert="false" update="false")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.3.jar:2.7.3]
+	at ru.edu.databaseservice.DataBaseServiceApplicationKt.main(DataBaseServiceApplication.kt:13) ~[classes/:?]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.RegUserEntity column: id (should be mapped with insert="false" update="false")
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 16 more
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: ru.edu.databaseservice.entities.RegUserEntity column: id (should be mapped with insert="false" update="false")
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:862) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:880) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:902) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:634) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:351) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:464) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1237) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 16 more
+[2022-11-17T17:10:50,694][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 2716 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
+[2022-11-17T17:10:50,706][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
+[2022-11-17T17:10:50,708][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-11-17T17:10:51,849][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-11-17T17:10:52,001][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 132 ms. Found 8 JPA repository interfaces.
+[2022-11-17T17:10:52,960][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+[2022-11-17T17:10:52,989][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:10:52,993][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
+[2022-11-17T17:10:52,995][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-11-17T17:10:53,182][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+[2022-11-17T17:10:53,183][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 2396 ms
+[2022-11-17T17:10:53,421][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
+[2022-11-17T17:10:53,723][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
+[2022-11-17T17:10:53,794][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-11-17T17:10:53,927][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
+[2022-11-17T17:10:54,246][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2022-11-17T17:10:54,470][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2022-11-17T17:10:55,275][INFO ][main][org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-11-17T17:10:55,295][INFO ][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-11-17T17:10:56,323][WARN ][main][org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-11-17T17:10:56,845][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:10:56,887][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start] Tomcat started on port(s): 8080 (http) with context path ''
+[2022-11-17T17:10:56,908][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarted] Started DataBaseServiceApplicationKt in 6.816 seconds (JVM running for 8.729)
+[2022-11-17T17:12:39,001][INFO ][http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-11-17T17:12:39,002][INFO ][http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet.initServletBean] Initializing Servlet 'dispatcherServlet'
+[2022-11-17T17:12:39,006][INFO ][http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet.initServletBean] Completed initialization in 3 ms
+[2022-11-17T17:12:39,426][INFO ][http-nio-8080-exec-2][ru.edu.databaseservice.services.AnonUserService.saveAnonUser] Request: AnonUsersEntity(id=null, iden32=65578138913908, roomsEntity=null)
+[2022-11-17T17:12:39,529][WARN ][http-nio-8080-exec-2][org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions] SQL Error: 0, SQLState: 42703
+[2022-11-17T17:12:39,530][ERROR][http-nio-8080-exec-2][org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions] ОШИБКА: столбец "roomsentity" в таблице "anon_users" не существует
+  Позиция: 40
+[2022-11-17T17:12:39,543][ERROR][http-nio-8080-exec-2][ru.edu.databaseservice.services.AnonUserService.saveAnonUser] could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+[2022-11-17T17:13:20,797][INFO ][SpringApplicationShutdownHook][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-11-17T17:13:20,802][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+[2022-11-17T17:13:20,816][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
+[2022-11-17T17:17:10,484][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 11760 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
+[2022-11-17T17:17:10,499][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
+[2022-11-17T17:17:10,502][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-11-17T17:17:11,765][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-11-17T17:17:11,882][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 102 ms. Found 8 JPA repository interfaces.
+[2022-11-17T17:17:12,826][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+[2022-11-17T17:17:12,863][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:17:12,864][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
+[2022-11-17T17:17:12,866][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-11-17T17:17:13,097][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+[2022-11-17T17:17:13,097][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 2479 ms
+[2022-11-17T17:17:13,353][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
+[2022-11-17T17:17:13,786][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
+[2022-11-17T17:17:13,915][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-11-17T17:17:14,495][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
+[2022-11-17T17:17:14,930][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2022-11-17T17:17:15,237][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2022-11-17T17:17:15,718][ERROR][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Failed to initialize JPA EntityManagerFactory: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.AnonUsersEntity.roomsEntity in ru.edu.databaseservice.entities.RoomsEntity.anonsId
+[2022-11-17T17:17:15,719][WARN ][main][org.springframework.context.support.AbstractApplicationContext.refresh] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.AnonUsersEntity.roomsEntity in ru.edu.databaseservice.entities.RoomsEntity.anonsId
+[2022-11-17T17:17:15,719][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+[2022-11-17T17:17:15,737][INFO ][main][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
+[2022-11-17T17:17:15,741][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Stopping service [Tomcat]
+[2022-11-17T17:17:15,758][INFO ][main][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2022-11-17T17:17:15,784][ERROR][main][org.springframework.boot.SpringApplication.reportFailure] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.AnonUsersEntity.roomsEntity in ru.edu.databaseservice.entities.RoomsEntity.anonsId
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.3.jar:2.7.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.3.jar:2.7.3]
+	at ru.edu.databaseservice.DataBaseServiceApplicationKt.main(DataBaseServiceApplication.kt:13) ~[classes/:?]
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: ru.edu.databaseservice.entities.AnonUsersEntity.roomsEntity in ru.edu.databaseservice.entities.RoomsEntity.anonsId
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:844) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:795) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:53) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1693) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1661) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:286) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1202) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1233) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 16 more
+[2022-11-17T17:18:17,904][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 11884 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
+[2022-11-17T17:18:17,917][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
+[2022-11-17T17:18:17,919][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-11-17T17:18:19,125][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-11-17T17:18:19,270][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 125 ms. Found 8 JPA repository interfaces.
+[2022-11-17T17:18:20,241][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+[2022-11-17T17:18:20,286][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:18:20,288][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
+[2022-11-17T17:18:20,289][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-11-17T17:18:20,479][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+[2022-11-17T17:18:20,480][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 2473 ms
+[2022-11-17T17:18:20,728][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
+[2022-11-17T17:18:21,131][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
+[2022-11-17T17:18:21,221][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-11-17T17:18:21,378][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
+[2022-11-17T17:18:21,701][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2022-11-17T17:18:21,916][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2022-11-17T17:18:22,668][INFO ][main][org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-11-17T17:18:22,682][INFO ][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-11-17T17:18:23,679][WARN ][main][org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-11-17T17:18:24,483][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:18:24,510][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start] Tomcat started on port(s): 8080 (http) with context path ''
+[2022-11-17T17:18:24,529][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarted] Started DataBaseServiceApplicationKt in 7.222 seconds (JVM running for 9.577)
+[2022-11-17T17:18:28,690][INFO ][http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-11-17T17:18:28,691][INFO ][http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet.initServletBean] Initializing Servlet 'dispatcherServlet'
+[2022-11-17T17:18:28,692][INFO ][http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet.initServletBean] Completed initialization in 1 ms
+[2022-11-17T17:18:29,145][INFO ][http-nio-8080-exec-2][ru.edu.databaseservice.services.AnonUserService.saveAnonUser] Request: AnonUsersEntity(id=null, iden32=65578138913908, roomsEntity=null)
+[2022-11-17T17:18:29,254][WARN ][http-nio-8080-exec-2][org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions] SQL Error: 0, SQLState: 42703
+[2022-11-17T17:18:29,254][ERROR][http-nio-8080-exec-2][org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions] ОШИБКА: столбец "roomsentity" в таблице "anon_users" не существует
+  Позиция: 40
+[2022-11-17T17:18:29,266][ERROR][http-nio-8080-exec-2][ru.edu.databaseservice.services.AnonUserService.saveAnonUser] could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+[2022-11-17T17:18:36,864][INFO ][SpringApplicationShutdownHook][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-11-17T17:18:36,866][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+[2022-11-17T17:18:36,874][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
+[2022-11-17T17:18:56,148][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 11304 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
+[2022-11-17T17:18:56,160][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
+[2022-11-17T17:18:56,162][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-11-17T17:18:57,340][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-11-17T17:18:57,492][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 131 ms. Found 8 JPA repository interfaces.
+[2022-11-17T17:18:58,437][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+[2022-11-17T17:18:58,477][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:18:58,478][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
+[2022-11-17T17:18:58,480][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-11-17T17:18:58,678][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+[2022-11-17T17:18:58,680][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 2435 ms
+[2022-11-17T17:18:58,920][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
+[2022-11-17T17:18:59,240][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
+[2022-11-17T17:18:59,313][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-11-17T17:18:59,481][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
+[2022-11-17T17:18:59,810][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2022-11-17T17:19:00,080][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2022-11-17T17:19:00,887][INFO ][main][org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-11-17T17:19:00,907][INFO ][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-11-17T17:19:01,947][WARN ][main][org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-11-17T17:19:02,561][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:19:02,589][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start] Tomcat started on port(s): 8080 (http) with context path ''
+[2022-11-17T17:19:02,600][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarted] Started DataBaseServiceApplicationKt in 6.998 seconds (JVM running for 8.886)
+[2022-11-17T17:19:06,915][INFO ][http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-11-17T17:19:06,916][INFO ][http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet.initServletBean] Initializing Servlet 'dispatcherServlet'
+[2022-11-17T17:19:06,918][INFO ][http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet.initServletBean] Completed initialization in 1 ms
+[2022-11-17T17:19:07,539][INFO ][http-nio-8080-exec-2][ru.edu.databaseservice.services.AnonUserService.saveAnonUser] Request: AnonUsersEntity(id=null, iden32=65578138913908, roomsEntity=null)
+[2022-11-17T17:19:07,660][WARN ][http-nio-8080-exec-2][org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions] SQL Error: 0, SQLState: 23503
+[2022-11-17T17:19:07,661][ERROR][http-nio-8080-exec-2][org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions] ОШИБКА: INSERT или UPDATE в таблице "anon_users" нарушает ограничение внешнего ключа "anon_users_rooms_null_fk"
+  Подробности: Ключ (id)=(1) отсутствует в таблице "rooms".
+[2022-11-17T17:19:07,680][ERROR][http-nio-8080-exec-2][ru.edu.databaseservice.services.AnonUserService.saveAnonUser] could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+[2022-11-17T17:19:47,594][INFO ][SpringApplicationShutdownHook][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-11-17T17:19:47,598][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+[2022-11-17T17:19:47,614][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
+[2022-11-17T17:20:04,917][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 8064 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
+[2022-11-17T17:20:04,930][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
+[2022-11-17T17:20:04,932][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-11-17T17:20:06,101][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-11-17T17:20:06,244][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 127 ms. Found 8 JPA repository interfaces.
+[2022-11-17T17:20:07,167][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+[2022-11-17T17:20:07,208][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:20:07,211][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
+[2022-11-17T17:20:07,212][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-11-17T17:20:07,415][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+[2022-11-17T17:20:07,415][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 2394 ms
+[2022-11-17T17:20:07,598][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
+[2022-11-17T17:20:07,852][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
+[2022-11-17T17:20:07,941][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-11-17T17:20:08,167][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
+[2022-11-17T17:20:08,482][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2022-11-17T17:20:08,697][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2022-11-17T17:20:09,539][INFO ][main][org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-11-17T17:20:09,554][INFO ][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-11-17T17:20:10,642][WARN ][main][org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-11-17T17:20:11,447][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:20:11,477][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start] Tomcat started on port(s): 8080 (http) with context path ''
+[2022-11-17T17:20:11,489][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarted] Started DataBaseServiceApplicationKt in 7.187 seconds (JVM running for 9.346)
+[2022-11-17T17:20:14,995][INFO ][http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-11-17T17:20:14,996][INFO ][http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet.initServletBean] Initializing Servlet 'dispatcherServlet'
+[2022-11-17T17:20:14,997][INFO ][http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet.initServletBean] Completed initialization in 1 ms
+[2022-11-17T17:20:16,218][INFO ][http-nio-8080-exec-2][ru.edu.databaseservice.services.AnonUserService.saveAnonUser] Request: AnonUsersEntity(id=null, iden32=65578138913908, roomsEntity=null)
+[2022-11-17T17:20:16,437][WARN ][http-nio-8080-exec-2][org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions] SQL Error: 0, SQLState: 23503
+[2022-11-17T17:20:16,437][ERROR][http-nio-8080-exec-2][org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions] ОШИБКА: INSERT или UPDATE в таблице "anon_users" нарушает ограничение внешнего ключа "anon_users_rooms_null_fk"
+  Подробности: Ключ (id)=(2) отсутствует в таблице "rooms".
+[2022-11-17T17:20:16,458][ERROR][http-nio-8080-exec-2][ru.edu.databaseservice.services.AnonUserService.saveAnonUser] could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+[2022-11-17T17:20:46,665][INFO ][SpringApplicationShutdownHook][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-11-17T17:20:46,667][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+[2022-11-17T17:20:46,677][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
+[2022-11-17T17:24:30,320][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 800 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
+[2022-11-17T17:24:30,335][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
+[2022-11-17T17:24:30,336][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-11-17T17:24:31,689][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-11-17T17:24:31,865][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 158 ms. Found 8 JPA repository interfaces.
+[2022-11-17T17:24:32,860][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+[2022-11-17T17:24:32,903][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:24:32,905][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
+[2022-11-17T17:24:32,906][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-11-17T17:24:33,191][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+[2022-11-17T17:24:33,192][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 2748 ms
+[2022-11-17T17:24:33,465][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
+[2022-11-17T17:24:33,909][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
+[2022-11-17T17:24:34,030][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-11-17T17:24:34,289][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
+[2022-11-17T17:24:34,816][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2022-11-17T17:24:35,126][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2022-11-17T17:24:36,042][INFO ][main][org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-11-17T17:24:36,058][INFO ][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-11-17T17:24:37,181][WARN ][main][org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-11-17T17:24:37,734][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:24:37,761][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start] Tomcat started on port(s): 8080 (http) with context path ''
+[2022-11-17T17:24:37,771][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarted] Started DataBaseServiceApplicationKt in 8.141 seconds (JVM running for 10.421)
+[2022-11-17T17:24:40,947][INFO ][http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-11-17T17:24:40,948][INFO ][http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet.initServletBean] Initializing Servlet 'dispatcherServlet'
+[2022-11-17T17:24:40,953][INFO ][http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet.initServletBean] Completed initialization in 5 ms
+[2022-11-17T17:24:41,448][WARN ][http-nio-8080-exec-2][org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions] SQL Error: 0, SQLState: 42703
+[2022-11-17T17:24:41,448][ERROR][http-nio-8080-exec-2][org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions] ОШИБКА: столбец botsid0_.roomsentity не существует
+  Позиция: 8
+[2022-11-17T17:24:41,456][WARN ][http-nio-8080-exec-2][org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException] Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: could not extract ResultSet; nested exception is com.fasterxml.jackson.databind.JsonMappingException: could not extract ResultSet (through reference chain: ru.edu.databaseservice.entities.RoomsEntity["botsId"])]
+[2022-11-17T17:25:31,240][INFO ][SpringApplicationShutdownHook][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-11-17T17:25:31,243][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+[2022-11-17T17:25:31,249][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
+[2022-11-17T17:26:41,029][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 12116 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
+[2022-11-17T17:26:41,044][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
+[2022-11-17T17:26:41,046][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-11-17T17:26:42,190][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-11-17T17:26:42,336][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 128 ms. Found 8 JPA repository interfaces.
+[2022-11-17T17:26:43,257][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+[2022-11-17T17:26:43,297][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:26:43,298][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
+[2022-11-17T17:26:43,299][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-11-17T17:26:43,496][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+[2022-11-17T17:26:43,496][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 2361 ms
+[2022-11-17T17:26:43,694][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
+[2022-11-17T17:26:43,983][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
+[2022-11-17T17:26:44,051][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-11-17T17:26:44,247][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
+[2022-11-17T17:26:44,711][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2022-11-17T17:26:45,038][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2022-11-17T17:26:46,096][INFO ][main][org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-11-17T17:26:46,121][INFO ][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-11-17T17:26:47,608][WARN ][main][org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-11-17T17:26:48,337][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:26:48,376][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start] Tomcat started on port(s): 8080 (http) with context path ''
+[2022-11-17T17:26:48,393][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarted] Started DataBaseServiceApplicationKt in 7.967 seconds (JVM running for 9.956)
+[2022-11-17T17:26:51,795][INFO ][http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-11-17T17:26:51,795][INFO ][http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet.initServletBean] Initializing Servlet 'dispatcherServlet'
+[2022-11-17T17:26:51,797][INFO ][http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet.initServletBean] Completed initialization in 1 ms
+[2022-11-17T17:26:52,603][WARN ][http-nio-8080-exec-2][org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions] SQL Error: 0, SQLState: 42703
+[2022-11-17T17:26:52,604][ERROR][http-nio-8080-exec-2][org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions] ОШИБКА: столбец usersid0_.ratingentity не существует
+  Позиция: 632
+[2022-11-17T17:26:52,634][WARN ][http-nio-8080-exec-2][org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException] Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: could not extract ResultSet; nested exception is com.fasterxml.jackson.databind.JsonMappingException: could not extract ResultSet (through reference chain: ru.edu.databaseservice.entities.RoomsEntity["usersId"])]
+[2022-11-17T17:27:26,700][WARN ][http-nio-8080-exec-3][org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions] SQL Error: 0, SQLState: 42703
+[2022-11-17T17:27:26,701][ERROR][http-nio-8080-exec-3][org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions] ОШИБКА: столбец usersid0_.roomsentity не существует
+  Позиция: 8
+[2022-11-17T17:27:26,702][WARN ][http-nio-8080-exec-3][org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException] Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: could not extract ResultSet; nested exception is com.fasterxml.jackson.databind.JsonMappingException: could not extract ResultSet (through reference chain: ru.edu.databaseservice.entities.RoomsEntity["usersId"])]
+[2022-11-17T17:28:33,753][INFO ][SpringApplicationShutdownHook][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-11-17T17:28:33,756][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+[2022-11-17T17:28:33,767][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.
+[2022-11-17T17:28:56,732][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting] Starting DataBaseServiceApplicationKt using Java 18 on DESKTOP-THTJS0A with PID 9688 (C:\Users\roman\IdeaProjects\DataBaseService\target\classes started by roman in C:\Users\roman\IdeaProjects\DataBaseService)
+[2022-11-17T17:28:56,746][DEBUG][main][org.springframework.boot.StartupInfoLogger.logStarting] Running with Spring Boot v2.7.3, Spring v5.3.22
+[2022-11-17T17:28:56,747][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo] The following 1 profile is active: "dev"
+[2022-11-17T17:28:57,879][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-11-17T17:28:58,016][INFO ][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 120 ms. Found 8 JPA repository interfaces.
+[2022-11-17T17:28:58,942][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+[2022-11-17T17:28:58,973][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:28:58,975][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting service [Tomcat]
+[2022-11-17T17:28:58,976][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-11-17T17:28:59,159][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+[2022-11-17T17:28:59,160][INFO ][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 2324 ms
+[2022-11-17T17:28:59,397][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Starting...
+[2022-11-17T17:28:59,661][INFO ][main][com.zaxxer.hikari.HikariDataSource.getConnection] HikariPool-1 - Start completed.
+[2022-11-17T17:28:59,730][INFO ][main][org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-11-17T17:28:59,857][INFO ][main][org.hibernate.Version.logVersion] HHH000412: Hibernate ORM core version 5.4.12.Final
+[2022-11-17T17:29:00,192][INFO ][main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2022-11-17T17:29:00,402][INFO ][main][org.hibernate.dialect.Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2022-11-17T17:29:01,227][INFO ][main][org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-11-17T17:29:01,245][INFO ][main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-11-17T17:29:02,485][WARN ][main][org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-11-17T17:29:03,332][INFO ][main][org.apache.juli.logging.DirectJDKLog.log] Starting ProtocolHandler ["http-nio-8080"]
+[2022-11-17T17:29:03,363][INFO ][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start] Tomcat started on port(s): 8080 (http) with context path ''
+[2022-11-17T17:29:03,380][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarted] Started DataBaseServiceApplicationKt in 7.227 seconds (JVM running for 9.104)
+[2022-11-17T17:29:07,176][INFO ][http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog.log] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-11-17T17:29:07,177][INFO ][http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet.initServletBean] Initializing Servlet 'dispatcherServlet'
+[2022-11-17T17:29:07,178][INFO ][http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet.initServletBean] Completed initialization in 1 ms
+[2022-11-17T17:29:07,511][INFO ][http-nio-8080-exec-2][ru.edu.databaseservice.services.AnonUserService.saveAnonUser] Request: AnonUsersEntity(id=null, iden32=65578138913908, roomsEntity=null)
+[2022-11-17T17:29:07,594][WARN ][http-nio-8080-exec-2][org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions] SQL Error: 0, SQLState: 23503
+[2022-11-17T17:29:07,594][ERROR][http-nio-8080-exec-2][org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions] ОШИБКА: INSERT или UPDATE в таблице "anon_users" нарушает ограничение внешнего ключа "anon_users_rooms_null_fk"
+  Подробности: Ключ (id)=(3) отсутствует в таблице "rooms".
+[2022-11-17T17:29:07,606][ERROR][http-nio-8080-exec-2][ru.edu.databaseservice.services.AnonUserService.saveAnonUser] could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+[2022-11-17T17:33:11,586][INFO ][http-nio-8080-exec-5][ru.edu.databaseservice.services.AnonUserService.saveAnonUser] Request: AnonUsersEntity(id=null, iden32=65578138913908, roomsEntity=null)
+[2022-11-17T17:33:11,620][INFO ][http-nio-8080-exec-5][ru.edu.databaseservice.services.AnonUserService.saveAnonUser] Anon successfully created AnonUsersEntity(id=4, iden32=65578138913908, roomsEntity=null)
+[2022-11-17T17:33:19,475][INFO ][SpringApplicationShutdownHook][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-11-17T17:33:19,478][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+[2022-11-17T17:33:19,487][INFO ][SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource.close] HikariPool-1 - Shutdown completed.

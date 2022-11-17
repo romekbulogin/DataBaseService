@@ -1,23 +1,21 @@
-package ru.edu.databaseservice.entities
+package ru.edu.databaseservice.entities;
 
-import java.sql.Date
-import javax.persistence.*
+import javax.persistence.*;
+import java.sql.Date;
+import java.util.Objects;
 
 @Entity
 @Table(name = "rating", schema = "public", catalog = "monopoly")
-data class RatingEntity (
+data class RatingEntity(
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @Column(name = "id", nullable = false)
+    @Column(name = "id")
     var id: Int? = null,
 
-    @Column(name = "id_user", nullable = true, insertable = false, updatable = false)
-    var idUser: Int? = null,
+    @Column(name = "id_user")
+    @OneToMany(mappedBy = "ratingEntity")
+    var idUser: MutableList<RegUserEntity>? = mutableListOf(),
 
-    @Column(name = "date_add", nullable = true)
-    var dateAdd: Date? = null,
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_user", referencedColumnName = "id")
-    var refRegUserEntity: RegUserEntity? = null
+    @Column(name = "date_add")
+    var dateAdd: Date? = null
 )
-
